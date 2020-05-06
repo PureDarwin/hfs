@@ -46,7 +46,7 @@ LIBRARY_SEARCH_PATHS = // nothing, this is a kernel component
 // WARNING_CFLAGS=-Weverything -Wno-unused-parameter -Wno-shorten-64-to-32 -Wno-reserved-id-macro -Wno-undef -Wno-missing-variable-declarations -Wno-padded -Wno-c11-extensions -Wno- documentation -Wno-variadic-macros -Wno-zero-length-array -Wno-documentation-unknown-command -Wno-packed -Wno-pedantic -Wno-format-non-iso -Wno-bad-function-cast -Wno-cast-align -Wno-disabled-macro-expansion -Wno-used-but-marked-unused -Wno-c++98-compat-pedantic -Wno-old-style-cast -Wno-c++98-compat -Wno-vla -Wno-switch-enum -Wno-c++-compat -Wno-global-constructors -Wno-shift-sign-overflow -Wno-covered-switch-default
 
 GCC_PREFIX_HEADER=core/kext-config.h
-GCC_PREPROCESSOR_DEFINITIONS=$(PREPROC_DEFN_$(CONFIGURATION))
+GCC_PREPROCESSOR_DEFINITIONS=$(PREPROC_DEFN_$(CONFIGURATION)) __PUREDARWIN__=1
 PREPROC_DEFN_Debug=DEBUG
 PRIVATE_HEADERS_FOLDER_PATH=/usr/local/include/hfs
 PUBLIC_HEADERS_FOLDER_PATH=/usr/include/hfs
