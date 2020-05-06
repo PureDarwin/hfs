@@ -1151,7 +1151,7 @@ extern struct hfs_sysctl_chain *sysctl_list;
 SYSCTL_DECL(_vfs_generic_hfs);
 
 #define HFS_SYSCTL(kind, parent, flags, name, ...)							\
-	SYSCTL_##kind(parent, flags, name, __VA_ARGS__)							\
+	SYSCTL_##kind(parent, flags, name, __VA_ARGS__);						\
 	struct hfs_sysctl_chain hfs_sysctl_##parent##_##name##_chain = {		\
 		.oid = &sysctl_##parent##_##name									\
 	};																		\
