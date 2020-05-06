@@ -302,6 +302,20 @@
 			remoteGlobalIDString = 4D07DCB71538EF3A002B57CB;
 			remoteInfo = fstyp_hfs;
 		};
+		1F3D31D024636AEA00927D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB48E49B1BB3070400523121;
+			remoteInfo = "OSX Kernel Framework Headers";
+		};
+		1F3D31D224636AEA00927D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB6A57DD1B55544D008AB046;
+			remoteInfo = "System Framework Headers";
+		};
 		4DBD523E1548A499007AA736 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -1630,6 +1644,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F3D31D124636AEA00927D83 /* PBXTargetDependency */,
+				1F3D31D324636AEA00927D83 /* PBXTargetDependency */,
 				FB7C14131C23695E004F8B2C /* PBXTargetDependency */,
 			);
 			name = kext;
@@ -2313,6 +2329,16 @@
 			isa = PBXTargetDependency;
 			target = 4D07DCB71538EF3A002B57CB /* fstyp_hfs */;
 			targetProxy = 07CA47221DA859CA00138D78 /* PBXContainerItemProxy */;
+		};
+		1F3D31D124636AEA00927D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB48E49B1BB3070400523121 /* OSX Kernel Framework Headers */;
+			targetProxy = 1F3D31D024636AEA00927D83 /* PBXContainerItemProxy */;
+		};
+		1F3D31D324636AEA00927D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB6A57DD1B55544D008AB046 /* System Framework Headers */;
+			targetProxy = 1F3D31D224636AEA00927D83 /* PBXContainerItemProxy */;
 		};
 		4DBD523F1548A499007AA736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
