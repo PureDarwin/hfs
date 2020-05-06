@@ -30,7 +30,9 @@
 #define hfs_iokit_h
 
 #include <sys/cdefs.h>
+#ifndef __PUREDARWIN__
 #include <AppleKeyStore/AppleKeyStoreFSServices.h>
+#endif
 
 __BEGIN_DECLS
 
@@ -42,6 +44,7 @@ void hfs_iterate_media_with_content(const char *content_uuid_cstring,
 									void *arg);
 kern_return_t hfs_get_platform_serial_number(char *serial_number_str,
 											 uint32_t len);
+#ifndef __PUREDARWIN__
 int hfs_unwrap_key(aks_cred_t access, const aks_wrapped_key_t wrapped_key_in,
 				   aks_raw_key_t key_out);
 int hfs_rewrap_key(aks_cred_t access, cp_key_class_t dp_class,
@@ -51,6 +54,7 @@ int hfs_new_key(aks_cred_t access, cp_key_class_t dp_class,
 				aks_raw_key_t key_out, aks_wrapped_key_t wrapped_key_out);
 int hfs_backup_key(aks_cred_t access, const aks_wrapped_key_t wrapped_key_in,
 				   aks_wrapped_key_t wrapped_key_out);
+#endif
 
 __END_DECLS
 
