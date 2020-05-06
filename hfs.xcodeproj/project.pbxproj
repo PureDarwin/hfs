@@ -44,7 +44,6 @@
 			);
 			dependencies = (
 				07CA47231DA859CA00138D78 /* PBXTargetDependency */,
-				FBE3A5A51BBEE34400CB9A33 /* PBXTargetDependency */,
 				FB48E4BC1BB30CC400523121 /* PBXTargetDependency */,
 				FBC234C61B4EC6B90002D849 /* PBXTargetDependency */,
 				4DBD52511548A4D2007AA736 /* PBXTargetDependency */,
@@ -52,31 +51,6 @@
 			);
 			name = All_MacOSX;
 			productName = All_MacOSX;
-		};
-		4DD3025A1538DB3A00001AA0 /* All_iOS */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4DD3025B1538DB3A00001AA0 /* Build configuration list for PBXAggregateTarget "All_iOS" */;
-			buildPhases = (
-			);
-			dependencies = (
-				07828B611E3FDD3B009D2106 /* PBXTargetDependency */,
-				FBE3A5A31BBEE33D00CB9A33 /* PBXTargetDependency */,
-				4DBD524F1548A4C8007AA736 /* PBXTargetDependency */,
-			);
-			name = All_iOS;
-			productName = All_iOS;
-		};
-		FB55AE651B7D47B300701D03 /* ios-tests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FB55AE701B7D47B300701D03 /* Build configuration list for PBXAggregateTarget "ios-tests" */;
-			buildPhases = (
-				FB55AE6F1B7D47B300701D03 /* Create BATS plist */,
-			);
-			dependencies = (
-				FB55AE661B7D47B300701D03 /* PBXTargetDependency */,
-			);
-			name = "ios-tests";
-			productName = Tests;
 		};
 		FB7C140C1C2368E6004F8B2C /* kext-version */ = {
 			isa = PBXAggregateTarget;
@@ -88,58 +62,6 @@
 			);
 			name = "kext-version";
 			productName = "kext-version";
-		};
-		FBA95AA91B5025E700887E82 /* mk-xnu */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FBA95AAA1B5025E700887E82 /* Build configuration list for PBXAggregateTarget "mk-xnu" */;
-			buildPhases = (
-				FBA95AAD1B5025EC00887E82 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "mk-xnu";
-			productName = "mk-xnu";
-		};
-		FBAA82651B56F2AB00EE6863 /* osx-tests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FBAA82661B56F2AB00EE6863 /* Build configuration list for PBXAggregateTarget "osx-tests" */;
-			buildPhases = (
-				FBAA82711B56F65800EE6863 /* Run local tests */,
-				FB55AE5C1B7D193B00701D03 /* Create BATS plist */,
-			);
-			dependencies = (
-				FB55AE5B1B7D190F00701D03 /* PBXTargetDependency */,
-				FBAA826A1B56F2B900EE6863 /* PBXTargetDependency */,
-				FBAA826C1B56F2B900EE6863 /* PBXTargetDependency */,
-				FBAA826E1B56F2B900EE6863 /* PBXTargetDependency */,
-			);
-			name = "osx-tests";
-			productName = Tests;
-		};
-		FBC234B91B4D87A20002D849 /* ios-root */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FBC234BF1B4D87A20002D849 /* Build configuration list for PBXAggregateTarget "ios-root" */;
-			buildPhases = (
-				FBC234BE1B4D87A20002D849 /* ShellScript */,
-			);
-			dependencies = (
-				FBC234BC1B4D87A20002D849 /* PBXTargetDependency */,
-			);
-			name = "ios-root";
-			productName = "combo-root";
-		};
-		FBE3F7821AF67748005BB768 /* osx-root */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FBE3F7841AF67748005BB768 /* Build configuration list for PBXAggregateTarget "osx-root" */;
-			buildPhases = (
-				FBE3F7961AF67C43005BB768 /* ShellScript */,
-			);
-			dependencies = (
-				FB75A4091B4AED92004B5A74 /* PBXTargetDependency */,
-				FBE3F7871AF6793E005BB768 /* PBXTargetDependency */,
-			);
-			name = "osx-root";
-			productName = "combo-root";
 		};
 /* End PBXAggregateTarget section */
 
@@ -373,13 +295,6 @@
 			remoteGlobalIDString = 86CBF37E183186C300A64A93;
 			remoteInfo = hfs_metadata;
 		};
-		07828B601E3FDD3B009D2106 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07828B591E3FDD25009D2106;
-			remoteInfo = hfs_libraries;
-		};
 		07CA47221DA859CA00138D78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -436,13 +351,6 @@
 			remoteGlobalIDString = 4DFD93F31535FF510039B6BA;
 			remoteInfo = fsck_hfs;
 		};
-		4DBD524E1548A4C8007AA736 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DBD523B1548A488007AA736;
-			remoteInfo = Common;
-		};
 		4DBD52501548A4D2007AA736 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -463,27 +371,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = FB48E49B1BB3070400523121;
 			remoteInfo = "OSX Kernel Framework Headers";
-		};
-		FB55AE5A1B7D190F00701D03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB76B3D11B7A4BE600FA9F2B;
-			remoteInfo = "hfs-tests";
-		};
-		FB55AE671B7D47B300701D03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB76B3D11B7A4BE600FA9F2B;
-			remoteInfo = "hfs-tests";
-		};
-		FB75A4081B4AED92004B5A74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB75A3B11B4AE765004B5A74;
-			remoteInfo = "encodings-kext";
 		};
 		FB7B02EB1B5568A100BEE4BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -534,41 +421,6 @@
 			remoteGlobalIDString = FB6A57DD1B55544D008AB046;
 			remoteInfo = "System Framework Headers";
 		};
-		FBA95AAE1B5045D400887E82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBA95AA91B5025E700887E82;
-			remoteInfo = "mk-xnu";
-		};
-		FBAA82691B56F2B900EE6863 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBAA82441B56F24100EE6863;
-			remoteInfo = hfs_alloc_test;
-		};
-		FBAA826B1B56F2B900EE6863 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBAA82501B56F26A00EE6863;
-			remoteInfo = hfs_extents_test;
-		};
-		FBAA826D1B56F2B900EE6863 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBAA825C1B56F28C00EE6863;
-			remoteInfo = rangelist_test;
-		};
-		FBC234BD1B4D87A20002D849 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB20E0DF1AE950C200CEBE7B;
-			remoteInfo = kext;
-		};
 		FBC234C31B4EC6AE0002D849 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -582,27 +434,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = FB75A3B11B4AE765004B5A74;
 			remoteInfo = "encodings-kext";
-		};
-		FBE3A5A21BBEE33D00CB9A33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB55AE651B7D47B300701D03;
-			remoteInfo = "ios-tests";
-		};
-		FBE3A5A41BBEE34400CB9A33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBAA82651B56F2AB00EE6863;
-			remoteInfo = "osx-tests";
-		};
-		FBE3F7861AF6793E005BB768 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB20E0DF1AE950C200CEBE7B;
-			remoteInfo = kext;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1800,7 +1631,6 @@
 			);
 			dependencies = (
 				FB7C14131C23695E004F8B2C /* PBXTargetDependency */,
-				FBA95AAF1B5045D400887E82 /* PBXTargetDependency */,
 			);
 			name = kext;
 			productName = kext;
@@ -2001,9 +1831,6 @@
 					FB7C140C1C2368E6004F8B2C = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					FBA95AA91B5025E700887E82 = {
-						CreatedOnToolsVersion = 7.0;
-					};
 					FBAA82441B56F24100EE6863 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -2013,14 +1840,8 @@
 					FBAA825C1B56F28C00EE6863 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					FBAA82651B56F2AB00EE6863 = {
-						CreatedOnToolsVersion = 7.0;
-					};
 					FBCC52FD1B852758008B752C = {
 						CreatedOnToolsVersion = 7.0;
-					};
-					FBE3F7821AF67748005BB768 = {
-						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -2038,7 +1859,6 @@
 			projectRoot = "";
 			targets = (
 				4DD302571538DB2700001AA0 /* All_MacOSX */,
-				4DD3025A1538DB3A00001AA0 /* All_iOS */,
 				4DBD523B1548A488007AA736 /* Common */,
 				4DFD95111537402A0039B6BA /* hfs.fs */,
 				8DD76FA90486AB0100D96B5E /* hfs.util */,
@@ -2052,17 +1872,12 @@
 				86CBF37E183186C300A64A93 /* hfs_metadata */,
 				FB20E0DF1AE950C200CEBE7B /* kext */,
 				FB75A3B11B4AE765004B5A74 /* encodings-kext */,
-				FBE3F7821AF67748005BB768 /* osx-root */,
-				FBC234B91B4D87A20002D849 /* ios-root */,
-				FBA95AA91B5025E700887E82 /* mk-xnu */,
 				FB6A57DD1B55544D008AB046 /* System Framework Headers */,
 				FB48E49B1BB3070400523121 /* OSX Kernel Framework Headers */,
 				FBAA82441B56F24100EE6863 /* hfs_alloc_test */,
 				FBAA82501B56F26A00EE6863 /* hfs_extents_test */,
 				FBAA825C1B56F28C00EE6863 /* rangelist_test */,
 				FB76B3D11B7A4BE600FA9F2B /* hfs-tests */,
-				FBAA82651B56F2AB00EE6863 /* osx-tests */,
-				FB55AE651B7D47B300701D03 /* ios-tests */,
 				FBCC52FD1B852758008B752C /* hfs-alloc-trace */,
 				FB48E5031BB3798500523121 /* Sim_Headers */,
 				FB7C140C1C2368E6004F8B2C /* kext-version */,
@@ -2173,42 +1988,6 @@
 			shellScript = "DIR=\"$DSTROOT/System/Library/Frameworks/System.framework/Versions/B/PrivateHeaders/hfs\"\nmkdir -p \"$DIR\"\ncp \"$DSTROOT/usr/local/include/hfs/hfs_fsctl.h\" \"$DIR\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB55AE5C1B7D193B00701D03 /* Create BATS plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/tests/gen-test-plist.sh",
-				"$(BUILT_PRODUCTS_DIR)/hfs-tests",
-			);
-			name = "Create BATS plist";
-			outputPaths = (
-				"$(INSTALL_ROOT)/AppleInternal/CoreOS/BATS/unit_tests/hfs.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SCRIPT_INPUT_FILE_0\" \"$SCRIPT_OUTPUT_FILE_0\"";
-			showEnvVarsInLog = 0;
-		};
-		FB55AE6F1B7D47B300701D03 /* Create BATS plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/tests/gen-test-plist.sh",
-				"$(BUILT_PRODUCTS_DIR)/hfs-tests",
-			);
-			name = "Create BATS plist";
-			outputPaths = (
-				"$(INSTALL_ROOT)/AppleInternal/CoreOS/BATS/unit_tests/hfs.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SCRIPT_INPUT_FILE_0\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FB5695F81C0F5ED0004C52F2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -2253,63 +2032,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# Make sure version is the form 1.2.3\nif [[ \"$RC_ProjectSourceVersion\" =~ (^[1-9][0-9]*(\\.[0-9]+){0,2}) ]] ; then\n    VERSION=${BASH_REMATCH[0]}\nelse\n    if [ -f \"$PROJECT_DERIVED_FILE_DIR\"/last-build ] ; then\n        BUILD_NUM=$((`cat \"$PROJECT_DERIVED_FILE_DIR\"/last-build` + 1))\n    else\n        BUILD_NUM=1\n    fi\n    MINUTE=`date '+%M' | sed 's/^0//'`\n    VERSION=\"999.$BUILD_NUM.$MINUTE\"\n    echo $BUILD_NUM >\"$PROJECT_DERIVED_FILE_DIR\"/last-build\nfi\n\nif [ $PLATFORM_NAME == macosx ] ; then\n    PLIST=\"$SRCROOT/core/macosx-Info.plist\"\nelse\n    PLIST=\"$SRCROOT/core/iphoneos-Info.plist\"\nfi\n\nxcrun cc -E -P -x c -Wno-trigraphs \"$PLIST\" -o \"$PROJECT_DERIVED_FILE_DIR\"/kext-Info.plist -D HFS_KEXT_VERSION=\"$VERSION\"\n";
-		};
-		FBA95AAD1B5025EC00887E82 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/core/kext.xcconfig",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/no-xnu-build",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! \"$XNU_PATH\" ] ; then\n  touch \"$DERIVED_FILE_DIR/no-xnu-build\"\n  exit 0\nfi\nrm -f \"$DERIVED_FILE_DIR/no-xnu-build\"\ncd \"$XNU_PATH\"\nshopt -s nocasematch\nextra_args=()\nif [[ \"$SDKROOT\" =~ iphoneos ]] ; then\n  extra_args+=(SDKROOT=iphoneos.internal PRODUCT_CONFIGS=\"$DEVICES\")\nfi\nenv -i make BUILD_LTO=0 KERNEL_CONFIGS=development \"${extra_args[@]}\" install\n";
-			showEnvVarsInLog = 0;
-		};
-		FBAA82711B56F65800EE6863 /* Run local tests */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run local tests";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$BUILT_PRODUCTS_DIR\"/hfs_alloc_test || err=1\n\"$BUILT_PRODUCTS_DIR\"/hfs_extents_test || err=1\n\"$BUILT_PRODUCTS_DIR\"/rangelist_test || err=1\nexit $err\n";
-			showEnvVarsInLog = 0;
-		};
-		FBC234BE1B4D87A20002D849 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh -x";
-			shellScript = "\"$SRCROOT/core/mk-root.sh\"";
-		};
-		FBE3F7961AF67C43005BB768 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh -x";
-			shellScript = "\"$SRCROOT/core/mk-root.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2587,11 +2309,6 @@
 			target = 86CBF37E183186C300A64A93 /* hfs_metadata */;
 			targetProxy = 07828B5E1E3FDD2E009D2106 /* PBXContainerItemProxy */;
 		};
-		07828B611E3FDD3B009D2106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07828B591E3FDD25009D2106 /* hfs_libraries */;
-			targetProxy = 07828B601E3FDD3B009D2106 /* PBXContainerItemProxy */;
-		};
 		07CA47231DA859CA00138D78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D07DCB71538EF3A002B57CB /* fstyp_hfs */;
@@ -2632,11 +2349,6 @@
 			target = 4DFD93F31535FF510039B6BA /* fsck_hfs */;
 			targetProxy = 4DBD524A1548A4A7007AA736 /* PBXContainerItemProxy */;
 		};
-		4DBD524F1548A4C8007AA736 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DBD523B1548A488007AA736 /* Common */;
-			targetProxy = 4DBD524E1548A4C8007AA736 /* PBXContainerItemProxy */;
-		};
 		4DBD52511548A4D2007AA736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DBD523B1548A488007AA736 /* Common */;
@@ -2651,21 +2363,6 @@
 			isa = PBXTargetDependency;
 			target = FB48E49B1BB3070400523121 /* OSX Kernel Framework Headers */;
 			targetProxy = FB48E4BB1BB30CC400523121 /* PBXContainerItemProxy */;
-		};
-		FB55AE5B1B7D190F00701D03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB76B3D11B7A4BE600FA9F2B /* hfs-tests */;
-			targetProxy = FB55AE5A1B7D190F00701D03 /* PBXContainerItemProxy */;
-		};
-		FB55AE661B7D47B300701D03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB76B3D11B7A4BE600FA9F2B /* hfs-tests */;
-			targetProxy = FB55AE671B7D47B300701D03 /* PBXContainerItemProxy */;
-		};
-		FB75A4091B4AED92004B5A74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB75A3B11B4AE765004B5A74 /* encodings-kext */;
-			targetProxy = FB75A4081B4AED92004B5A74 /* PBXContainerItemProxy */;
 		};
 		FB7B02EC1B5568A100BEE4BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2702,31 +2399,6 @@
 			target = FB6A57DD1B55544D008AB046 /* System Framework Headers */;
 			targetProxy = FBA540001B7BF2DF00899E5B /* PBXContainerItemProxy */;
 		};
-		FBA95AAF1B5045D400887E82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBA95AA91B5025E700887E82 /* mk-xnu */;
-			targetProxy = FBA95AAE1B5045D400887E82 /* PBXContainerItemProxy */;
-		};
-		FBAA826A1B56F2B900EE6863 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBAA82441B56F24100EE6863 /* hfs_alloc_test */;
-			targetProxy = FBAA82691B56F2B900EE6863 /* PBXContainerItemProxy */;
-		};
-		FBAA826C1B56F2B900EE6863 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBAA82501B56F26A00EE6863 /* hfs_extents_test */;
-			targetProxy = FBAA826B1B56F2B900EE6863 /* PBXContainerItemProxy */;
-		};
-		FBAA826E1B56F2B900EE6863 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBAA825C1B56F28C00EE6863 /* rangelist_test */;
-			targetProxy = FBAA826D1B56F2B900EE6863 /* PBXContainerItemProxy */;
-		};
-		FBC234BC1B4D87A20002D849 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB20E0DF1AE950C200CEBE7B /* kext */;
-			targetProxy = FBC234BD1B4D87A20002D849 /* PBXContainerItemProxy */;
-		};
 		FBC234C41B4EC6AE0002D849 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FB20E0DF1AE950C200CEBE7B /* kext */;
@@ -2736,21 +2408,6 @@
 			isa = PBXTargetDependency;
 			target = FB75A3B11B4AE765004B5A74 /* encodings-kext */;
 			targetProxy = FBC234C51B4EC6B90002D849 /* PBXContainerItemProxy */;
-		};
-		FBE3A5A31BBEE33D00CB9A33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB55AE651B7D47B300701D03 /* ios-tests */;
-			targetProxy = FBE3A5A21BBEE33D00CB9A33 /* PBXContainerItemProxy */;
-		};
-		FBE3A5A51BBEE34400CB9A33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBAA82651B56F2AB00EE6863 /* osx-tests */;
-			targetProxy = FBE3A5A41BBEE34400CB9A33 /* PBXContainerItemProxy */;
-		};
-		FBE3F7871AF6793E005BB768 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB20E0DF1AE950C200CEBE7B /* kext */;
-			targetProxy = FBE3F7861AF6793E005BB768 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2871,14 +2528,6 @@
 			name = Release;
 		};
 		4DD302591538DB2700001AA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		4DD3025C1538DB3A00001AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -3162,34 +2811,6 @@
 			};
 			name = Debug;
 		};
-		FB55AE711B7D47B300701D03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-W",
-					"-Wno-missing-field-initializers",
-				);
-			};
-			name = Release;
-		};
-		FB55AE721B7D47B300701D03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-W",
-					"-Wno-missing-field-initializers",
-				);
-			};
-			name = Debug;
-		};
 		FB6A57E21B55544D008AB046 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3449,24 +3070,6 @@
 			};
 			name = Debug;
 		};
-		FBA95AAB1B5025E700887E82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FBA95AAC1B5025E700887E82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
 		FBAA824A1B56F24100EE6863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3712,54 +3315,6 @@
 			};
 			name = Debug;
 		};
-		FBAA82671B56F2AB00EE6863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-W",
-					"-Wno-missing-field-initializers",
-				);
-			};
-			name = Release;
-		};
-		FBAA82681B56F2AB00EE6863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-W",
-					"-Wno-missing-field-initializers",
-				);
-			};
-			name = Debug;
-		};
-		FBC234C01B4D87A20002D849 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-			};
-			name = Release;
-		};
-		FBC234C11B4D87A20002D849 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
-			};
-			name = Debug;
-		};
 		FBCC53021B852759008B752C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3876,14 +3431,6 @@
 			name = Debug;
 		};
 		FBD5C7D81B1D591800B4620E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FBD5C7D91B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -4120,26 +3667,6 @@
 			};
 			name = Debug;
 		};
-		FBD5C7E61B1D591800B4620E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
-			};
-			name = Debug;
-		};
-		FBE3F7831AF67748005BB768 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
-			};
-			name = Release;
-		};
 		FDD9FA3414A132BF0043D4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4215,15 +3742,6 @@
 			buildConfigurations = (
 				4DD302591538DB2700001AA0 /* Release */,
 				FBD5C7D81B1D591800B4620E /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DD3025B1538DB3A00001AA0 /* Build configuration list for PBXAggregateTarget "All_iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DD3025C1538DB3A00001AA0 /* Release */,
-				FBD5C7D91B1D591800B4620E /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4309,15 +3827,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB55AE701B7D47B300701D03 /* Build configuration list for PBXAggregateTarget "ios-tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB55AE711B7D47B300701D03 /* Release */,
-				FB55AE721B7D47B300701D03 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FB6A57E11B55544D008AB046 /* Build configuration list for PBXNativeTarget "System Framework Headers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4354,15 +3863,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBA95AAA1B5025E700887E82 /* Build configuration list for PBXAggregateTarget "mk-xnu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBA95AAB1B5025E700887E82 /* Release */,
-				FBA95AAC1B5025E700887E82 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FBAA82491B56F24100EE6863 /* Build configuration list for PBXNativeTarget "hfs_alloc_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4390,38 +3890,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBAA82661B56F2AB00EE6863 /* Build configuration list for PBXAggregateTarget "osx-tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBAA82671B56F2AB00EE6863 /* Release */,
-				FBAA82681B56F2AB00EE6863 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBC234BF1B4D87A20002D849 /* Build configuration list for PBXAggregateTarget "ios-root" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBC234C01B4D87A20002D849 /* Release */,
-				FBC234C11B4D87A20002D849 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FBCC53041B852759008B752C /* Build configuration list for PBXNativeTarget "hfs-alloc-trace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBCC53021B852759008B752C /* Release */,
 				FBCC53031B852759008B752C /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBE3F7841AF67748005BB768 /* Build configuration list for PBXAggregateTarget "osx-root" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBE3F7831AF67748005BB768 /* Release */,
-				FBD5C7E61B1D591800B4620E /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
