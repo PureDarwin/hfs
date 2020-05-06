@@ -871,7 +871,6 @@
 		C1B6FA2210CC0AF400778D48 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		C1B6FA2F10CC0B8A00778D48 /* hfs.util.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hfs.util.8; sourceTree = "<group>"; };
 		C1B6FD2B10CC0DB200778D48 /* hfs.util */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hfs.util; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB02B8CE1B5ED0B50093DD47 /* make_opensource.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = make_opensource.sh; sourceTree = "<group>"; };
 		FB20E0E01AE950C200CEBE7B /* HFS.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFS.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB20E0E31AE950C200CEBE7B /* macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macosx-Info.plist"; sourceTree = "<group>"; };
 		FB20E0E41AE950C200CEBE7B /* hfs_iokit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hfs_iokit.cpp; sourceTree = "<group>"; };
@@ -1148,7 +1147,6 @@
 				FBCC52FF1B852759008B752C /* hfs-alloc-trace */,
 				FDD9FA4014A133A50043D4A9 /* Frameworks */,
 				C1B6FD2C10CC0DB200778D48 /* Products */,
-				FB02B8CE1B5ED0B50093DD47 /* make_opensource.sh */,
 			);
 			name = hfs;
 			sourceTree = "<group>";
