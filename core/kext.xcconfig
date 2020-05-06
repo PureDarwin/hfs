@@ -26,6 +26,13 @@
 // @APPLE_OSREFERENCE_LICENSE_HEADER_END@
 //
 
+#include "darwinbuild.xcconfig"
+
+HEADER_SEARCH_PATHS = $(DEPROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders $(DEPROOT)/System/Library/Frameworks/Kernel.framework/Headers
+SYSTEM_HEADER_SEARCH_PATHS = // nothing, this is a kernel component
+FRAMEWORK_SEARCH_PATHS = // nothing, this is a kernel component
+LIBRARY_SEARCH_PATHS = // nothing, this is a kernel component
+
 // Used if building combined xnu & hfs roots
 //DEVICES=<ios-devices-to-build>
 //MACHINE=<osx-machine-net-address>
