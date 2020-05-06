@@ -2447,7 +2447,6 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = hfs_util/hfs_util.osx.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = hfs.util;
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2493,7 +2492,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INSTALL_PATH = /sbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 			};
 			name = Release;
 		};
@@ -2508,7 +2506,6 @@
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = optical.c;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = optical.c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2543,7 +2540,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2561,7 +2557,6 @@
 					"DEBUG_BUILD=0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2575,7 +2570,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG_BUILD=1";
 				PRODUCT_NAME = newfs_hfs_debug;
-				SDKROOT = macosx.internal;
 			};
 			name = Release;
 		};
@@ -2638,7 +2632,6 @@
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				STRIPFLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -2687,7 +2680,6 @@
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs.kext;
 				PRODUCT_NAME = HFS;
-				SDKROOT = macosx.internal;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-unused-parameter",
@@ -2918,7 +2910,6 @@
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs.encodings.kext;
 				PRODUCT_NAME = HFSEncodings;
-				SDKROOT = macosx.internal;
 				SUPPORTED_PLATFORMS = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -2941,7 +2932,6 @@
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs.encodings.kext;
 				PRODUCT_NAME = HFSEncodings;
-				SDKROOT = macosx.internal;
 				SUPPORTED_PLATFORMS = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -2987,7 +2977,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "-fexceptions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/tests";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -3043,7 +3032,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fexceptions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/tests";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -3100,7 +3088,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
 					"$(inherited)",
@@ -3145,7 +3132,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
 					"$(inherited)",
@@ -3189,7 +3175,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -3232,7 +3217,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3268,7 +3252,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -3310,7 +3293,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3474,7 +3456,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = hfs.util;
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3487,7 +3468,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3503,7 +3483,6 @@
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = optical.c;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = optical.c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3516,7 +3495,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3530,7 +3508,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG_BUILD=1";
 				PRODUCT_NAME = newfs_hfs_debug;
-				SDKROOT = macosx.internal;
 			};
 			name = Debug;
 		};
@@ -3547,7 +3524,6 @@
 					"DEBUG_BUILD=0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3560,7 +3536,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INSTALL_PATH = /sbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 			};
 			name = Debug;
 		};
@@ -3609,7 +3584,6 @@
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos.internal;
 				STRIPFLAGS = "";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -3657,7 +3631,6 @@
 				MODULE_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs.kext;
 				PRODUCT_NAME = HFS;
-				SDKROOT = macosx.internal;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-unused-parameter",
@@ -3675,7 +3648,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
