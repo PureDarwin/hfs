@@ -340,11 +340,11 @@
 		FB76B3DC1B7A530500FA9F2B /* test-external-jnl.c in Sources */ = {isa = PBXBuildFile; fileRef = FB76B3DA1B7A52BE00FA9F2B /* test-external-jnl.c */; };
 		FB76B3EE1B7BE24B00FA9F2B /* disk-image.m in Sources */ = {isa = PBXBuildFile; fileRef = FB76B3EB1B7BDFDB00FA9F2B /* disk-image.m */; };
 		FB76B3F21B7BE79800FA9F2B /* systemx.c in Sources */ = {isa = PBXBuildFile; fileRef = FB76B3EF1B7BE67400FA9F2B /* systemx.c */; };
-		FB7B02E81B55634F00BEE4BE /* hfs.util in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1B6FD2B10CC0DB200778D48 /* hfs.util */; };
-		FB7B02E91B55644A00BEE4BE /* mount_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D0E899C1534FE65004CD678 /* mount_hfs */; };
-		FB7B02EA1B55663400BEE4BE /* fsck_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFD93F41535FF510039B6BA /* fsck_hfs */; };
-		FB81AFBB1B83E2C0004E8F76 /* CopyHFSMeta in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDD9FA2C14A132BF0043D4A9 /* CopyHFSMeta */; };
-		FB81AFBC1B83E2C6004E8F76 /* newfs_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DE6C75B153504C100C11066 /* newfs_hfs */; };
+		FB7B02E81B55634F00BEE4BE /* hfs.util in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1B6FD2B10CC0DB200778D48 /* hfs.util */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB7B02E91B55644A00BEE4BE /* mount_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D0E899C1534FE65004CD678 /* mount_hfs */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB7B02EA1B55663400BEE4BE /* fsck_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFD93F41535FF510039B6BA /* fsck_hfs */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB81AFBB1B83E2C0004E8F76 /* CopyHFSMeta in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDD9FA2C14A132BF0043D4A9 /* CopyHFSMeta */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB81AFBC1B83E2C6004E8F76 /* newfs_hfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DE6C75B153504C100C11066 /* newfs_hfs */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FBAA824C1B56F24E00EE6863 /* hfs_alloc_test.c in Sources */ = {isa = PBXBuildFile; fileRef = FBAA823D1B56F22400EE6863 /* hfs_alloc_test.c */; };
 		FBAA82581B56F27200EE6863 /* hfs_extents_test.c in Sources */ = {isa = PBXBuildFile; fileRef = FBAA823E1B56F22400EE6863 /* hfs_extents_test.c */; };
 		FBAA82641B56F28F00EE6863 /* rangelist_test.c in Sources */ = {isa = PBXBuildFile; fileRef = FBAA82401B56F22400EE6863 /* rangelist_test.c */; };
@@ -738,6 +738,7 @@
 		0703A0531CD826160035BCFD /* test-defrag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-defrag.c"; sourceTree = "<group>"; };
 		07C2BF881CB43F5E00D8327D /* test-renamex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-renamex.c"; sourceTree = "<group>"; };
 		09D6B7D61E317ED2003C20DC /* test_disklevel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_disklevel.c; sourceTree = "<group>"; };
+		1F544B2B246360C9006ABAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A386A3A1C221E67007FEDAC /* test-list-ids.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-list-ids.c"; sourceTree = "<group>"; };
 		2A84DBD31D9E1179007964B8 /* test-raw-dev-unaligned.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-raw-dev-unaligned.c"; sourceTree = "<group>"; };
 		2A9399941BDFEA6E00FB075B /* test-access.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-access.c"; sourceTree = "<group>"; };
@@ -852,7 +853,6 @@
 		4DFD94AF153649070039B6BA /* newfs_hfs_debug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = newfs_hfs_debug; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFD94E615373C2C0039B6BA /* fsck_makestrings */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fsck_makestrings; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFD95121537402A0039B6BA /* hfs.fs */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hfs.fs; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DFD9537153746210039B6BA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DFD9539153746B30039B6BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DFD953D15377C7D0039B6BA /* hfs.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hfs.xcconfig; sourceTree = "<group>"; };
 		7204A9401BE94359007A9898 /* img-to-c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "img-to-c.c"; sourceTree = "<group>"; };
@@ -1982,7 +1982,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					07828B591E3FDD25009D2106 = {
 						CreatedOnToolsVersion = 8.3;
@@ -2028,11 +2028,11 @@
 			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "hfs" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
-				English,
+				Base,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* hfs */;
 			productRefGroup = C1B6FD2C10CC0DB200778D48 /* Products */;
@@ -2760,7 +2760,7 @@
 		4DFD9536153746210039B6BA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4DFD9537153746210039B6BA /* English */,
+				1F544B2B246360C9006ABAA0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2771,6 +2771,7 @@
 		07828B5A1E3FDD25009D2106 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2778,6 +2779,7 @@
 		07828B5B1E3FDD25009D2106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2785,6 +2787,7 @@
 		07828B5C1E3FDD25009D2106 /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -2792,6 +2795,7 @@
 		1DEB928708733DD80010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = hfs_util/hfs_util.ios.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = hfs_util/hfs_util.osx.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -2805,12 +2809,39 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DFD953D15377C7D0039B6BA /* hfs.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
 		4D07DCBF1538EF3A002B57CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fstyp_hfs/fstyp_hfs.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INSTALL_PATH = /sbin;
@@ -2822,6 +2853,7 @@
 		4D0E89A41534FE65004CD678 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = mount_hfs/mount_hfs.ios.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = mount_hfs/mount_hfs.osx.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -2837,6 +2869,7 @@
 		4DBD523D1548A488007AA736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -2850,6 +2883,7 @@
 		4DD302591538DB2700001AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2857,6 +2891,7 @@
 		4DD3025C1538DB3A00001AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2864,7 +2899,9 @@
 		4DE6C763153504C100C11066 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -2875,6 +2912,7 @@
 		4DFD93FB1535FF510039B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fsck_hfs/fsck_hfs.ios.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = fsck_hfs/fsck_hfs.osx.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -2892,7 +2930,9 @@
 		4DFD94AE153649070039B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG_BUILD=1";
 				PRODUCT_NAME = newfs_hfs_debug;
@@ -2903,7 +2943,8 @@
 		4DFD94E515373C2C0039B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"BSD=1",
 					"FSCK_MAKESTRINGS=1",
@@ -2916,9 +2957,11 @@
 		4DFD951C1537402A0039B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = fs/Info.plist;
 				INSTALL_PATH = /System/Library/Filesystems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs;
 				PRODUCT_NAME = hfs;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				WRAPPER_EXTENSION = fs;
@@ -3150,6 +3193,8 @@
 		FB48E5091BB3798500523121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_HEADERS_UNIFDEF_FLAGS = "-UKERNEL";
 				INSTALLHDRS_SCRIPT_PHASE = YES;
@@ -3162,6 +3207,8 @@
 		FB48E50A1BB3798500523121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_HEADERS_UNIFDEF_FLAGS = "-UKERNEL";
 				INSTALLHDRS_SCRIPT_PHASE = YES;
@@ -3174,6 +3221,8 @@
 		FB48E50B1BB3798500523121 /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_HEADERS_UNIFDEF_FLAGS = "-UKERNEL";
 				INSTALLHDRS_SCRIPT_PHASE = YES;
@@ -3186,6 +3235,7 @@
 		FB55AE711B7D47B300701D03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -3199,6 +3249,7 @@
 		FB55AE721B7D47B300701D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -3455,6 +3506,7 @@
 		FB7C140E1C2368E6004F8B2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -3462,6 +3514,7 @@
 		FB7C140F1C2368E6004F8B2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3469,6 +3522,7 @@
 		FB7C14101C2368E6004F8B2C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -3477,6 +3531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -3485,6 +3540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3737,6 +3793,7 @@
 		FBAA82671B56F2AB00EE6863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -3750,6 +3807,7 @@
 		FBAA82681B56F2AB00EE6863 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -3764,6 +3822,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 			};
@@ -3773,6 +3832,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 			};
@@ -3795,6 +3855,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -3831,6 +3892,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -3860,13 +3922,41 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DFD953D15377C7D0039B6BA /* hfs.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		FBD5C7D81B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3874,6 +3964,7 @@
 		FBD5C7D91B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3881,6 +3972,7 @@
 		FBD5C7DA1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -3894,9 +3986,11 @@
 		FBD5C7DB1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = fs/Info.plist;
 				INSTALL_PATH = /System/Library/Filesystems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs;
 				PRODUCT_NAME = hfs;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				WRAPPER_EXTENSION = fs;
@@ -3906,7 +4000,9 @@
 		FBD5C7DC1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = hfs_util/hfs_util.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = hfs.util;
 				SDKROOT = macosx.internal;
@@ -3917,7 +4013,9 @@
 		FBD5C7DD1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = CopyHFSMeta/CopyHFSMeta.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -3928,7 +4026,9 @@
 		FBD5C7DE1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = mount_hfs/mount_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = optical.c;
@@ -3942,7 +4042,9 @@
 		FBD5C7DF1B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -3953,7 +4055,9 @@
 		FBD5C7E01B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG_BUILD=1";
 				PRODUCT_NAME = newfs_hfs_debug;
@@ -3964,7 +4068,9 @@
 		FBD5C7E11B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fsck_hfs/fsck_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"BSD=1",
@@ -3980,6 +4086,7 @@
 		FBD5C7E21B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fstyp_hfs/fstyp_hfs.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INSTALL_PATH = /sbin;
@@ -3991,7 +4098,8 @@
 		FBD5C7E31B1D591800B4620E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"BSD=1",
 					"FSCK_MAKESTRINGS=1",
@@ -4094,6 +4202,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
 			};
@@ -4103,13 +4212,40 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DFD953D15377C7D0039B6BA /* hfs.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Coverage;
 		};
 		FBD69B171B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -4117,6 +4253,7 @@
 		FBD69B181B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -4124,6 +4261,7 @@
 		FBD69B191B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -4137,9 +4275,11 @@
 		FBD69B1A1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = fs/Info.plist;
 				INSTALL_PATH = /System/Library/Filesystems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.filesystems.hfs;
 				PRODUCT_NAME = hfs;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				WRAPPER_EXTENSION = fs;
@@ -4149,7 +4289,9 @@
 		FBD69B1B1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = hfs_util/hfs_util.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = hfs.util;
 				SDKROOT = macosx.internal;
@@ -4160,7 +4302,9 @@
 		FBD69B1C1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = CopyHFSMeta/CopyHFSMeta.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -4171,7 +4315,9 @@
 		FBD69B1D1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = mount_hfs/mount_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = optical.c;
@@ -4185,7 +4331,9 @@
 		FBD69B1E1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -4196,7 +4344,9 @@
 		FBD69B1F1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = newfs_hfs/newfs_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG_BUILD=1";
 				PRODUCT_NAME = newfs_hfs_debug;
@@ -4207,7 +4357,9 @@
 		FBD69B201B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fsck_hfs/fsck_hfs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"BSD=1",
@@ -4223,6 +4375,7 @@
 		FBD69B211B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = fstyp_hfs/fstyp_hfs.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INSTALL_PATH = /sbin;
@@ -4234,7 +4387,8 @@
 		FBD69B221B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"BSD=1",
 					"FSCK_MAKESTRINGS=1",
@@ -4360,6 +4514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
 			};
@@ -4369,6 +4524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 			};
@@ -4378,6 +4534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -4619,6 +4776,7 @@
 		FBD69B2E1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -4632,6 +4790,7 @@
 		FBD69B2F1B94E9990022ECAD /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				WARNING_CFLAGS = (
@@ -4659,6 +4818,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4688,6 +4848,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB20E1781AE968BD00CEBE7B /* kext.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
 			};
@@ -4696,7 +4857,9 @@
 		FDD9FA3414A132BF0043D4A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = CopyHFSMeta/CopyHFSMeta.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx.internal;
@@ -4715,6 +4878,7 @@
 				07828B5C1E3FDD25009D2106 /* Coverage */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "hfs.util" */ = {
 			isa = XCConfigurationList;

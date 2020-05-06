@@ -4,8 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>$HFS_COPYRIGHT_INFO_STRING</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.filesystems.hfs</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -16,30 +18,10 @@
 	<string>$HFS_VERSION</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleGetInfoString</key>
-	<string>$HFS_COPYRIGHT_INFO_STRING</string>
 	<key>CFBundleVersion</key>
 	<string>$HFS_VERSION</string>
 	<key>FSMediaTypes</key>
 	<dict>
-		<key>Apple_Boot</key>
-		<dict>
-			<key>FSMediaProperties</key>
-			<dict>
-				<key>Content Hint</key>
-				<string>Apple_Boot</string>
-				<key>Leaf</key>
-				<true/>
-			</dict>
-			<key>FSProbeArguments</key>
-			<string>-p</string>
-			<key>FSProbeExecutable</key>
-			<string>hfs.util</string>
-			<key>FSProbeOrder</key>
-			<integer>1000</integer>
-			<key>autodiskmount</key>
-			<false/>
-		</dict>
 		<key>426F6F74-0000-11AA-AA11-00306543ECAC</key>
 		<dict>
 			<key>FSMediaProperties</key>
@@ -73,6 +55,24 @@
 			<string>hfs.util</string>
 			<key>FSProbeOrder</key>
 			<integer>1000</integer>
+		</dict>
+		<key>Apple_Boot</key>
+		<dict>
+			<key>FSMediaProperties</key>
+			<dict>
+				<key>Content Hint</key>
+				<string>Apple_Boot</string>
+				<key>Leaf</key>
+				<true/>
+			</dict>
+			<key>FSProbeArguments</key>
+			<string>-p</string>
+			<key>FSProbeExecutable</key>
+			<string>hfs.util</string>
+			<key>FSProbeOrder</key>
+			<integer>1000</integer>
+			<key>autodiskmount</key>
+			<false/>
 		</dict>
 		<key>Apple_HFS</key>
 		<dict>
@@ -141,6 +141,86 @@
 	</dict>
 	<key>FSPersonalities</key>
 	<dict>
+		<key>Case-sensitive HFS+</key>
+		<dict>
+			<key>FSFormatArguments</key>
+			<string>-s</string>
+			<key>FSFormatContentMask</key>
+			<string>Apple_HFSX</string>
+			<key>FSFormatExecutable</key>
+			<string>newfs_hfs</string>
+			<key>FSFormatMaximumSize</key>
+			<integer>9223372034707292160</integer>
+			<key>FSFormatMinimumSize</key>
+			<integer>4194304</integer>
+			<key>FSMountArguments</key>
+			<string></string>
+			<key>FSMountExecutable</key>
+			<string>mount_hfs</string>
+			<key>FSName</key>
+			<string>Mac OS Extended (Case-sensitive)</string>
+			<key>FSRepairArguments</key>
+			<string>-y</string>
+			<key>FSRepairExecutable</key>
+			<string>fsck_hfs</string>
+			<key>FSSubType</key>
+			<integer>2</integer>
+			<key>FSVerificationArguments</key>
+			<string>-fn</string>
+			<key>FSVerificationExecutable</key>
+			<string>fsck_hfs</string>
+			<key>FSXMLOutputArgument</key>
+			<string>-x</string>
+			<key>FSfileObjectsAreCasePreserving</key>
+			<true/>
+			<key>FSfileObjectsAreCaseSensitive</key>
+			<true/>
+			<key>FSvolumeNameIsCasePreserving</key>
+			<true/>
+		</dict>
+		<key>Case-sensitive Journaled HFS+</key>
+		<dict>
+			<key>FSCoreStorageEncryptionName</key>
+			<string>Mac OS Extended (Case-sensitive, Journaled, Encrypted)</string>
+			<key>FSEncryptionName</key>
+			<string>Mac OS Extended (Case-sensitive, Journaled, Encrypted)</string>
+			<key>FSFormatArguments</key>
+			<string>-s -J</string>
+			<key>FSFormatContentMask</key>
+			<string>Apple_HFSX</string>
+			<key>FSFormatExecutable</key>
+			<string>newfs_hfs</string>
+			<key>FSFormatMaximumSize</key>
+			<integer>9223372034707292160</integer>
+			<key>FSFormatMinimumSize</key>
+			<integer>9437184</integer>
+			<key>FSLiveVerificationArguments</key>
+			<string>-l</string>
+			<key>FSMountArguments</key>
+			<string></string>
+			<key>FSMountExecutable</key>
+			<string>mount_hfs</string>
+			<key>FSName</key>
+			<string>Mac OS Extended (Case-sensitive, Journaled)</string>
+			<key>FSRepairArguments</key>
+			<string>-fy</string>
+			<key>FSRepairExecutable</key>
+			<string>fsck_hfs</string>
+			<key>FSSubType</key>
+			<integer>3</integer>
+			<key>FSVerificationArguments</key>
+			<string>-fn</string>
+			<key>FSVerificationExecutable</key>
+			<string>fsck_hfs</string>
+			<key>FSXMLOutputArgument</key>
+			<string>-x</string>
+			<key>FSfileObjectsAreCasePreserving</key>
+			<true/>
+			<key>FSfileObjectsAreCaseSensitive</key>
+			<true/>
+			<key>FSvolumeNameIsCasePreserving</key>
+			<true/>
+		</dict>
 		<key>HFS</key>
 		<dict>
 			<key>FSMountArguments</key>
@@ -149,18 +229,18 @@
 			<string>mount_hfs</string>
 			<key>FSName</key>
 			<string>Mac OS Standard</string>
-			<key>FSSubType</key>
-			<integer>128</integer>
 			<key>FSRepairArguments</key>
 			<string>-y</string>
-			<key>FSXMLOutputArgument</key>
-			<string>-x</string>
 			<key>FSRepairExecutable</key>
 			<string>fsck_hfs</string>
+			<key>FSSubType</key>
+			<integer>128</integer>
 			<key>FSVerificationArguments</key>
 			<string>-n</string>
 			<key>FSVerificationExecutable</key>
 			<string>fsck_hfs</string>
+			<key>FSXMLOutputArgument</key>
+			<string>-x</string>
 			<key>FSfileObjectsAreCasePreserving</key>
 			<true/>
 			<key>FSfileObjectsAreCaseSensitive</key>
@@ -176,28 +256,28 @@
 			<string>Apple_HFS</string>
 			<key>FSFormatExecutable</key>
 			<string>newfs_hfs</string>
-			<key>FSFormatMinimumSize</key>
-			<integer>524288</integer>
 			<key>FSFormatMaximumSize</key>
 			<integer>9223372034707292160</integer>
+			<key>FSFormatMinimumSize</key>
+			<integer>524288</integer>
 			<key>FSMountArguments</key>
 			<string></string>
 			<key>FSMountExecutable</key>
 			<string>mount_hfs</string>
 			<key>FSName</key>
 			<string>Mac OS Extended</string>
-			<key>FSSubType</key>
-			<integer>0</integer>
 			<key>FSRepairArguments</key>
 			<string>-y</string>
-			<key>FSXMLOutputArgument</key>
-			<string>-x</string>
 			<key>FSRepairExecutable</key>
 			<string>fsck_hfs</string>
+			<key>FSSubType</key>
+			<integer>0</integer>
 			<key>FSVerificationArguments</key>
 			<string>-fn</string>
 			<key>FSVerificationExecutable</key>
 			<string>fsck_hfs</string>
+			<key>FSXMLOutputArgument</key>
+			<string>-x</string>
 			<key>FSfileObjectsAreCasePreserving</key>
 			<true/>
 			<key>FSfileObjectsAreCaseSensitive</key>
@@ -207,124 +287,44 @@
 		</dict>
 		<key>Journaled HFS+</key>
 		<dict>
+			<key>FSCoreStorageEncryptionName</key>
+			<string>Mac OS Extended (Journaled, Encrypted)</string>
+			<key>FSEncryptionName</key>
+			<string>Mac OS Extended (Journaled, Encrypted)</string>
 			<key>FSFormatArguments</key>
 			<string>-J</string>
 			<key>FSFormatContentMask</key>
 			<string>Apple_HFS</string>
 			<key>FSFormatExecutable</key>
 			<string>newfs_hfs</string>
-			<key>FSFormatMinimumSize</key>
-			<integer>9437184</integer>
 			<key>FSFormatMaximumSize</key>
 			<integer>9223372034707292160</integer>
+			<key>FSFormatMinimumSize</key>
+			<integer>9437184</integer>
+			<key>FSLiveVerificationArguments</key>
+			<string>-l</string>
 			<key>FSMountArguments</key>
 			<string></string>
 			<key>FSMountExecutable</key>
 			<string>mount_hfs</string>
 			<key>FSName</key>
 			<string>Mac OS Extended (Journaled)</string>
-			<key>FSSubType</key>
-			<integer>1</integer>
 			<key>FSRepairArguments</key>
 			<string>-fy</string>
-			<key>FSXMLOutputArgument</key>
-			<string>-x</string>
 			<key>FSRepairExecutable</key>
 			<string>fsck_hfs</string>
+			<key>FSSubType</key>
+			<integer>1</integer>
 			<key>FSVerificationArguments</key>
 			<string>-fn</string>
 			<key>FSVerificationExecutable</key>
 			<string>fsck_hfs</string>
-			<key>FSLiveVerificationArguments</key>
-			<string>-l</string>
-			<key>FSEncryptionName</key>
-			<string>Mac OS Extended (Journaled, Encrypted)</string>
-			<key>FSCoreStorageEncryptionName</key>
-			<string>Mac OS Extended (Journaled, Encrypted)</string>
+			<key>FSXMLOutputArgument</key>
+			<string>-x</string>
 			<key>FSfileObjectsAreCasePreserving</key>
 			<true/>
 			<key>FSfileObjectsAreCaseSensitive</key>
 			<false/>
-			<key>FSvolumeNameIsCasePreserving</key>
-			<true/>
-		</dict>
-		<key>Case-sensitive HFS+</key>
-		<dict>
-			<key>FSFormatArguments</key>
-			<string>-s</string>
-			<key>FSFormatContentMask</key>
-			<string>Apple_HFSX</string>
-			<key>FSFormatExecutable</key>
-			<string>newfs_hfs</string>
-			<key>FSFormatMinimumSize</key>
-			<integer>4194304</integer>
-			<key>FSFormatMaximumSize</key>
-			<integer>9223372034707292160</integer>
-			<key>FSMountArguments</key>
-			<string></string>
-			<key>FSMountExecutable</key>
-			<string>mount_hfs</string>
-			<key>FSName</key>
-			<string>Mac OS Extended (Case-sensitive)</string>
-			<key>FSSubType</key>
-			<integer>2</integer>
-			<key>FSRepairArguments</key>
-			<string>-y</string>
-			<key>FSXMLOutputArgument</key>
-			<string>-x</string>
-			<key>FSRepairExecutable</key>
-			<string>fsck_hfs</string>
-			<key>FSVerificationArguments</key>
-			<string>-fn</string>
-			<key>FSVerificationExecutable</key>
-			<string>fsck_hfs</string>
-			<key>FSfileObjectsAreCasePreserving</key>
-			<true/>
-			<key>FSfileObjectsAreCaseSensitive</key>
-			<true/>
-			<key>FSvolumeNameIsCasePreserving</key>
-			<true/>
-		</dict>
-		<key>Case-sensitive Journaled HFS+</key>
-		<dict>
-			<key>FSFormatArguments</key>
-			<string>-s -J</string>
-			<key>FSFormatContentMask</key>
-			<string>Apple_HFSX</string>
-			<key>FSFormatExecutable</key>
-			<string>newfs_hfs</string>
-			<key>FSFormatMinimumSize</key>
-			<integer>9437184</integer>
-			<key>FSFormatMaximumSize</key>
-			<integer>9223372034707292160</integer>
-			<key>FSMountArguments</key>
-			<string></string>
-			<key>FSMountExecutable</key>
-			<string>mount_hfs</string>
-			<key>FSName</key>
-			<string>Mac OS Extended (Case-sensitive, Journaled)</string>
-			<key>FSSubType</key>
-			<integer>3</integer>
-			<key>FSRepairArguments</key>
-			<string>-fy</string>
-			<key>FSXMLOutputArgument</key>
-			<string>-x</string>
-			<key>FSRepairExecutable</key>
-			<string>fsck_hfs</string>
-			<key>FSVerificationArguments</key>
-			<string>-fn</string>
-			<key>FSVerificationExecutable</key>
-			<string>fsck_hfs</string>
-			<key>FSLiveVerificationArguments</key>
-			<string>-l</string>
-			<key>FSEncryptionName</key>
-			<string>Mac OS Extended (Case-sensitive, Journaled, Encrypted)</string>
-			<key>FSCoreStorageEncryptionName</key>
-			<string>Mac OS Extended (Case-sensitive, Journaled, Encrypted)</string>
-			<key>FSfileObjectsAreCasePreserving</key>
-			<true/>
-			<key>FSfileObjectsAreCaseSensitive</key>
-			<true/>
 			<key>FSvolumeNameIsCasePreserving</key>
 			<true/>
 		</dict>
