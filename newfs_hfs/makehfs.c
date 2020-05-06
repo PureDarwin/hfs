@@ -51,7 +51,7 @@
 
 #include <TargetConditionals.h>
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE || defined(__PUREDARWIN__)
 
 // CoreServices is not available, so...
 
